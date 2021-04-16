@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var code_number = prompt("코드 번호를 입력해 주세요");
+        var code = code_number.substring(code_number.indexOf("-") + 1, code_number.lastIndexOf("-"));
+
+        switch (Number(code)) {
+       
+            case 1:
+                document.write("식품", "<br>");
+                break;
+
+            case 2:
+                document.write("전자", "<br>");
+                break;
+
+            case "3":
+                document.write("생활", "<br>");
+                break;
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

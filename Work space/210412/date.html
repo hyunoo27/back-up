@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체</title>
+    <script>
+        // 객체 생성(메모리를 할당하겠다. / new)
+        var today = new Date();
+        document.write(today,"<br>");
+        document.write("년도 : ",today.getFullYear(),"<br>");
+        document.write("월 : ",today.getMonth()+1,"<br>");
+        document.write("일 : ",today.getDate(),"<br>");
+        document.write("요일 : ",today.getDay(),"<hr>");
+
+        var yesterday = new Date(2021,3,11);
+        document.write(yesterday,"<br>");
+        document.write("년도 : ",yesterday.getFullYear(),"<br>");
+        document.write("월 : ",yesterday.getMonth()+1,"<br>");
+        document.write("일 : ",yesterday.getDate(),"<br>");
+        document.write("요일 : ",yesterday.getDay(),"<hr>");
+
+        today = new Date(2021,3,12);
+        document.write(yesterday.getTime(),"<br>");
+        document.write((today.getTime()-yesterday.getTime())/86400000,"<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

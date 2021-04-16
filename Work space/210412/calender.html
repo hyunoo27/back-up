@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 달력</title>
+    <script>
+        var today = new Date("2021-04-12");
+        var tag = "<h2>" + (today.getMonth() + 1) + "월 달력</h2>";
+        var start = new Date();
+        start.setDate(1);
+        var end = new Date();
+        end.setMonth(end.getMonth() + 1);
+        end.setDate(0);//다음달 전일 = 이번달 마지막날
+
+        // start.setDate(start.getDate() - start.getDay());
+        // end.setDate(end.getDate() + 6 - end.getDay());
+        start.setDate(-4);
+        
+        
+        tag += "<table><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th>" +
+            "<th>금</th><th>토</th></tr>" +
+            "<tr>";
+        for (i = 0; i < 7; i++) {
+            tag += "<td>" + start.getDate() + "</td>";
+            start.setDate(start.getDate() + 1);
+        }
+        tag += "</tr>";
+        tag += "</table>";
+        document.write(tag);
+
+
+
+    </script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+      

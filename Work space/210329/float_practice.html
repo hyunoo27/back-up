@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(128, 128, 128, 0.342);
+            box-sizing: border-box;
+        }
+        .align{
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .float {
+            float: left;
+        }
+        .radios_left{
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .radios_right{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="align">
+        <div>
+             <div class="float box radios_left"><a href="#">홈</a></div>
+             <div class="float box"><a href="#">회사소개</a></div>
+             <div class="float box"><a href="#">고객센터</a></div>
+             <div class="float box"><a href="#">오시는길</a></div>
+             <div class="float box radios_right"><a href="#">주문하기</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

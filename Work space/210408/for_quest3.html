@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i,j;
+        var num=1;
+        var table = "<table>";
+        for(i=1;i<6;i++){
+            table+="<tr>";
+            for(j=0;j<5-i;j++){
+                table+="<td class='bg_yellow'></td>";
+            }
+            // for(;2*i-1>0;i--){
+            //     table+="<td class='bg_orange'></td>";
+            // }
+            for(j=0;j<(i-1)*2+1;j++){
+                table += "<td class='bg_orange'></td>"
+            }
+            for(j=0;j<5-i;j++){
+                table+="<td class='bg_green'></td>";
+            }
+            table+="</tr>";
+        }
+        table += "</table>";
+        document.write(table);   
+    </script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            text-align: center;
+            vertical-align: middle;
+            width: 150px;
+            height: 150px;
+            border:1px solid black;
+        }
+        .bg_yellow{
+            background-color: yellow;
+        }
+        .bg_orange{
+            background-color:orange;
+        }
+        .bg_green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

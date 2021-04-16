@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "A&B&C&D,1&2&3&4,E&F&G&H,5&6&7&8";
+
+        var row = str.split(",");
+        var table = "<table>";
+        for (i = 0; i < row.length; i++) {
+            
+            table += "<tr>";
+            var data = row[i].split("&")
+
+            for (j = 0; j < data.length; j++) {
+                table += "<td>" + data[j] + "</td>";
+            }
+            table += "</tr>";
+        }
+        table += "</table>";
+
+        document.write(table);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+            

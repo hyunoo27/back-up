@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #back{
+            background-image: url(/baby.webp);
+            width: 100px;
+            height: 100px;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="pop">영역 태그</div>
+    <ul>
+        <li>A - list</li>
+        <li>B - list</li>
+        <li>C - list</li>
+        <li>D - list</li>
+    </ul>
+    <ul id="ull">
+        <li>q - list</li>
+        <li>w - list</li>
+        <li>e - list</li>
+        <li>r - list</li>
+    </ul>
+    <div id="back" onmouseover="rolloverImage()"></div>
+    <script>
+        var pop = document.getElementById("pop");
+        var ul = document.getElementsByTagName("ul")[0];
+        pop.style.color = "#e8e8e8e8";
+        pop.style.backgroundColor = "yellow"; //background-color -> backgroundColor
+        ul.style.listStyleType = "none";
+
+        function rolloverImage(){
+            var back = document.getElementById("back");
+            back.style.backgroundImage="url('/couple.webp')";
+        }
+    </script>
+</body>
+</html>

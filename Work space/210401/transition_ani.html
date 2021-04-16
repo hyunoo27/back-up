@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        a:link,
+        a:visited {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            background-size: 100px;
+            background-image: url(/couple.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            background-color: rgba(209, 209, 61, 0.712);
+            border-radius: 30px;
+            background-size: 130px;
+        }
+
+        #box {
+            width: 150px;
+            height: 150px;
+            background-size: 100px;
+            background-image: url(/couple.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+        }
+
+        @keyframes ani1 {
+            from {
+                background-image: url(/couple.webp);
+
+            }
+
+            to {
+                background-image: url(/210322/img/piano1.webp);
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                text-align: left;
+            }
+
+            50% {
+                text-align: center;
+            }
+
+            100% {
+                text-align: right;
+            }
+        }
+
+        #box:active {
+            animation-name: ani2;
+            animation-duration: 3000ms;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <a href="#"></a>
+    </div>
+    <div>
+        <div id="box" class="inline_block"></div>
+    </div>
+</body>
+
+</html>

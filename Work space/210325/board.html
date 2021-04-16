@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        table {
+            width: 800px;
+            margin: 0 auto;
+            padding: 5px;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        th {
+            padding: 3px;
+            border-collapse: collapse;
+            background-color: rgba(128, 128, 128, 0.377);
+        }
+
+        td {
+            padding: 2px;
+            border-collapse: collapse;
+        }
+
+        td,th {
+            width: 100px;
+            text-align: center;
+        }
+
+        tr{
+            border-top: 1px solid rgb(0, 0, 0);
+        }
+
+        .small {
+            width: 100px;
+        }
+        .big{
+            width: 300px
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .span_n {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid cadetblue;
+            background-color: cadetblue;
+            border-radius: 16px;
+        }
+
+        .blue {
+            background-color: rgb(72, 167, 245);
+            background-clip: border-box;
+            color: white;
+        }
+
+        .button {
+            margin: 2px;
+        }
+
+        .ex{
+            border-bottom: unset;
+        }
+        .right{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>게시판</h1>
+    <table>
+        <tr>
+            <th class="left">No.</th>
+            <th class="left big">title</th>
+            <th>count</th>
+            <th>date</th>
+            <th class="small">좋아요</th>
+            <th>싫어요</th>
+        </tr>
+        <tr>
+            <td class="left">1</td>
+            <td class="left">제목 <span class="span_n">N</span></td>
+            <td>0</td>
+            <td>2010-11-19</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="left">2</td>
+            <td class="left">제목</td>
+            <td>0</td>
+            <td>2010-11-19</td>
+            <td>40</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td class="left">3</td>
+            <td class="left">제목</td>
+            <td>345</td>
+            <td>2010-11-19</td>
+            <td>112</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td class="left">4</td>
+            <td class="left">제목</td>
+            <td>456</td>
+            <td>2010-11-19</td>
+            <td>44</td>
+            <td>457</td>
+        </tr>
+        <tr>
+            <td class="left">5</td>
+            <td class="left">제목</td>
+            <td>324</td>
+            <td>2010-11-19</td>
+            <td>75</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td class="left">6</td>
+            <td class="left">제목</td>
+            <td>22</td>
+            <td>2010-11-19</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="5" class="ex"> <button type="button"><</button>
+                        <button type="button">1</button>
+                        <button type="button">2</button>
+                        <button type="button" class="button blue">3</button>
+                        <button type="button">4</button>
+                        <button type="button">></button></td>
+            <td class="ex right"><button type="button" class="button blue">글쓰기</button></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

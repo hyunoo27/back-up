@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function () {
+                var id = document.getElementById("id");
+                var pw = document.getElementById("pass");
+                if (id.value.length == 0 || pass.value.length == 0)
+                    alert("입력하세ㅛ");
+                else
+                alert("정상입니다 삐빅");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="id" id="id"><br>
+    <input type="password" id="pass"><br>
+    <button>로그인</button>
+</body>
+
+</html>

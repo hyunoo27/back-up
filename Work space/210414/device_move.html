@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>접속한 기기 정보 이용</title>
+    <script>
+        var info = navigator.userAgent.toLowerCase();
+
+        if (info.indexOf("windows") != -1)
+            document.write("https://www.microsoft.com/ko-kr");
+        else if (info.indexOf("macintosh") != -1)
+            document.write("https://www.apple.com/kr/mac/?afid=p238%7CsT5savkPQ-dc_mtid_18707vxu38484_pcrid_490125115571_pgrid_16348500321_&cid=aos-kr-kwgo-mac--slid---product--");
+        else if (info.indexOf("iphone") != -1)
+            document.write("https://www.apple.com/kr/iphone/?afid=p238%7CsjibOtEzK-dc_mtid_209254jz40384_pcrid_472673347605_pgrid_44798419125_&cid=wwa-kr-kwgo-iphone--iPhone-General-");
+        else if (info.indexOf("android") != -1)
+            document.write("https://www.google.co.kr/");
+        else
+            
+            document.write("NO DATA");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

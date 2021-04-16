@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=[];
+        arr.push(5);
+        arr.push(4);
+        arr.push(3);
+        arr.push(2);
+        arr.push(1);
+        arr.splice(arr.indexOf(3),1);
+        function arr_print(arr){
+            for(i=0;i<arr.length;i++){
+                document.write(arr[i]," ");
+            }
+        }
+
+        arr_print(arr);
+        document.write("<h2>배열 요소 검색</h2>")
+        document.write("indexof(x)에 해당하는 인덱스 번호 : ", arr.indexOf(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

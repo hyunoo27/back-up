@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var r;
+       
+
+        function createnumber(){
+            r=Math.floor(Math.random(r)*45+1);
+            return r;
+        }
+        // function createLotto(){
+        //     for(i=0;i<7;i++){
+        //         arr.push(createnumber())
+        //     }
+
+        // }
+        function createLotto(){
+            var arr=[];
+
+            while(arr.length !=7){
+
+                var n = createnumber();
+
+                if(arr.indexOf(n) != -1)
+                    continue; // 중복 되지 않으면 아래 과정 무시
+                else
+                    arr.push(n);
+            }
+            return arr;
+        }
+
+        document.write(createLotto(),"<br>");
+
+        var lotto=createLotto();
+        lotto = lotto.sort();
+        document.write(lotto,"<br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

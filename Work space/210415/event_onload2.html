@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var img = document.getElementsByTagName("img")[0];
+            img.onload = function(){
+                alert("img load");
+            }
+        }
+        function img(){
+            alert("img load");
+        }
+    </script>
+</head>
+<body>
+    <h1>onload 이벤트 테스트</h1>
+    <img src="/couple.webp" alt="">
+    <h2>h2 영역</h2>
+</body>
+</html>

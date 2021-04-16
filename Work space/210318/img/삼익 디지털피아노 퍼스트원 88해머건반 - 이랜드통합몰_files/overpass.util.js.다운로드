@@ -1,0 +1,1 @@
+(function(a){"object"!=a.type(window.elandmall)&&(window.elandmall={});"object"!=a.type(window.elandmall.util)&&(window.elandmall.util={});"object"!=a.type(window.elandmall.validate)&&(window.elandmall.validate={})})(jQuery);

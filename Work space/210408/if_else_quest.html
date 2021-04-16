@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 속 반복문 문제</title>
+    <script>
+        var table = "<table>";
+        var num = 1;
+        var i = 1;
+        var j = 1;
+        while (i < 6) {
+           
+            j = 0;
+
+            table = table + "<tr>";
+
+            if (i % 2 == 1) {
+                while (j < 5) {
+                    table = table + "<td class='yellow'> " + num + " </td>";
+                    num++;
+                    j++;
+                }
+            }
+
+            else {
+                while (j < 5) {
+                    table = table + "<td class='green'> " + num + " </td>";
+                    num++;
+                    j++;
+                }
+            }
+
+            i++;
+
+            table = table + "</tr>";
+        }
+
+            table = table + "</table>";
+            document.write(table);
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table {
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: rgba(51, 226, 51, 0.623);
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+

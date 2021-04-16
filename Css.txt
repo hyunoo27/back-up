@@ -1,0 +1,120 @@
+ㅁ CSS(cascading style sheets) : 디자인
+
+- html 문서를 표현하는 디자인 부분을 담당하는 언어
+
+	선택자(selector) : 디자인을 적용할 태그를 선택하는 방법
+
+	(폰트, 크기, 글꼴, bold, italic(기울임), underline, 색상
+	 레이아웃, 박스 모델링, 가로세로, display, float, 좌표, position
+	 배경, 테두리, 여백(margin, padding, content), 애니메이션)
+
+- 문장 생성기 : http://guny.kr/stuff/klorem/
+- 간단한 프로토 타입 만들기 : 카카오 오븐 이용
+- http://st.koreaedugroup.com/2019/main.asp
+
+---------------------------------------------------------
+
+- 선택자 우선순위(같은 순위일 경우 선후에 따라 결정)
+	 1순위. 속성 값 뒤에 !important를 붙인 속성
+	 2순위. HTML에서 style을 지정한 속성
+	 3순위. id로 지정된 속성
+	 4순위. class로 지정된 속성
+	 5순위. 태그 이름으로 지정된 속성
+	 6순위. 상위 객체에 상속된 속성
+
+- 기본 글자크기는 16px
+- em : 부모 요소를 기준으로 비율로 크기 지정(잘안씀)
+- line : underline, overline, line-through
+- font-weight: bold : 두껍게
+- font-family : 글꼴(글꼴을 2가지 이상 설정하면 우선순위에따라 설정되고, 
+		만약에 1순위가 없는경우는 2순위로 간다)
+		구글 폰트에서 오픈 폰트 구할수 있음
+			 @font-face{
+       				     font-family: 'bp';
+    			                 src: url(/210323/resource/font/NanumMyeongjo-ExtraBold.ttf);
+			         }
+- border-collapse: collapse; : 2중선 없앰(테이블)
+- text-align : 정렬(자식요소의 inline태그와 텍스트를 정렬)
+- text-shadow : x좌표 / y좌표 / 번짐 / 그림자 색상
+		(그라데이션은 구글링 후 생성기 이용)
+- margin : 2px(위 아래) 4px(좌 우) <= 값 2개일 경우
+- border: color 2px solid;
+	solid, double, dotted, inset, outset
+- *{
+	margin 0, padding 0;
+		}
+- margin 0 auto : block값들을 가운데로 모아줌. 해당 블럭에다 속성 줘야함
+- text align : 해당 인라인이 모여있는 영역에다 이 속성 줘야함.
+- background-clip :
+		border box : 테두리 까지
+		padding box : 패딩까지 
+		content box : 
+- background-size :
+		cover : 할당된 영역의 작은 쪽에만 맞춰줌(남는 공간 발생
+		contain : 억지로 이미지를 영역에 맞추어 늘림 / 비율 망가짐
+- hr이중선 없애기
+	height: 2px;
+        	border: none;
+            background-color: black;
+
+- border
+	left, right 등으로 부분적 가능
+	border-radius : 모서리 둥글게(120max?)
+
+- inline(width등으로 크기 먹여도 안먹음) / block / 
+	inline-block(치트키) / none / 얘를 먹여서 정렬시킨 경우에는
+	폰트의 성질 때문에 좌우, 아래에 여백 생김. 폰트 사이즈 0준
+	다음에 처리
+
+- 속성은 블록 요소나 표의 칸 상자의 가로 정렬을 설정합니다. 
+  즉 vertical-align과 동일하나 세로가 아닌 가로 방향으로 동작합니다.
+
+- position
+	absoulute : 살짝 고정
+	fixed
+	relative : 자신의 원래 위치를 기준으로 상대적으로 
+	z-index : 순위에 따라 누가 올라오느냐가 결정됨(우선 순위)
+- float
+	:본래 지정된 영역의 시작점을 기준으로 둥둥 띄워짐
+- 하이퍼링크 버튼 전체 영역 확장
+	a태그에다가 display: inline-block;
+            	              width: 100%; 속성 부여
+- 하이퍼링크
+	 a:link
+	 a:visited
+             a:hover
+
+- 간접 선택자
+	부모-자식 : ex) p > span
+	조상-자손: ex) .container li
+
+- input 클릭했을때 네모 박스 없애기
+	 input:focus {outline:none;}
+
+- float 정렬, text aling 정렬 써야할 케이스 정리
+	https://m.blog.naver.com/thdbsgh3443/221229545494
+
+- full_screen?(1920*1080기준) 1920*1040????
+
+---------------
+
+ㅁ 질문
+
+-board(0325)
+blue 테두리 색깔
+늘어나는건 되는데 줄어들진 않음
+tr 선 안보임
+
+- %는 상위 항목 기준으로 주는 값이다.
+- auto로 주는 값 정확히 알기
+- clear???
+- box-sizing 활용법???(padding했을때 크기 깨지는것 방지?????)
+- relative - absoulute 차이??
+- a태그 넣을때 title, alt 넣는 습관 들이기
+- line-height로 정렬 할때는 해당 인라인을 감싸고 있는 박스 크기로
+  line-height값 조정 해주면 된다.
+- border는 상하좌우 속성 따로 줄수있고 영역 바깥쪽
+  out라인은 상하좌우 묶여 있고 영역 안쪽
+- check박스 이미지 바꾸기 : 210405-radio_css.html
+---------
+

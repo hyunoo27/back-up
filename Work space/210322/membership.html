@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1>회원가입 페이지</h1>
+    <form action="" method="GET">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td colspan="3"><input type="text" name="id" placeholder="아이디를 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td>암호</td>
+                <td colspan="3"><input type="text" name="pw" placeholder="비밀번호를 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td>암호 확인</td>
+                <td colspan="3"><input type="text" name="pw cheek" placeholder="비밀번호를 다시 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td colspan="3"><input type="text" name="name" placeholder="이름을 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>
+                    <select name="" id="">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">016</option>
+                        <option value="">019</option>
+                    </select>
+                    <input type="text" name="phone number1" maxlength="2" placeholder="내용을 입력해주세요">
+                    <input type="text" name="phone number2" placeholder="내용을 입력해주세요">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="text" name="id" placeholder="메일주소를 입력해주세요"> @
+                    <select name="" id="">
+                        <option value="">naver.com</option>
+                        <option value="">hanmail.net</option>
+                        <option value="">gmail.com</option>
+                        <option value="">직접입력</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">메일링 서비스 동의 <label><input type="checkbox">가입</label></td>
+            </tr>
+            <tr>
+                <td>약관 동의</td>
+                <td><label><input type="radio" name="data" value="yes">동의</label>
+                    <label><input type="radio" name="data" value="no">비동의</label>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">회원가입</button> <button type="reset">초기화</button> <button type="button">취소</button>
+    </form>
+</body>
+
+</html>
+                   

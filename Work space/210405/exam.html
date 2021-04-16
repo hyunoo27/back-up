@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1200px;
+            height: 910px;
+            border-bottom: 1px solid #e5e5e5;
+            margin: 0 auto;
+        }
+
+        .left_menu {
+            width: 60px;
+            height: 900px;
+            background-color: #e5e5e5;
+            position: fixed;
+        }
+
+        .div_header {
+            width: 1140px;
+            height: 200px;
+            float: left;
+            margin-left: 60px;
+        }
+
+        .main_menu {
+            width: 1140px;
+            height: 50px;
+            float: left;
+            margin-left: 60px;
+            text-align: center;
+        }
+
+        section {
+            width: 1140px;
+            margin-left: 60px;
+            float: left;
+        }
+
+        .td1 {
+            width: 250px;
+            height: 30px;
+            font-size: 30px;
+            padding: 7px;
+        }
+
+        .td2 {
+            width: 330px;
+            height: 30px;
+            font-size: 30px;
+            padding: 7px;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .f_right {
+            float: right;
+        }
+
+        .email_box {
+            width: 120px;
+        }
+
+        form {
+            width: 600px;
+            height: 380px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 220px;
+            height: 40px;
+        }
+
+        select {
+            width: 120px;
+            height: 48px;
+        }
+
+        button {
+            width: 100px;
+            height: 38px;
+            border: none;
+            background-color: rgba(68, 147, 250, 0.815);
+            color: white;
+            font-size: 20px;
+        }
+
+        textarea {
+
+            width: 380px;
+        }
+
+        .td_textarea {
+            height: 180px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+
+        .image {
+            width: 1140px;
+            height: 200px;
+        }
+
+        nav>a>img {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav>a {
+            padding: 0;
+            padding-left: 12px;
+        }
+
+        .ad_img {
+            width: 200px;
+            height: 125px;
+            position: absolute;
+            top: 35px;
+            left: 1620px;
+            position: fixed
+        }
+
+        input::placeholder {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="left_menu">
+            <a href="#"><img src="/210405/img/home.png" alt=""></a>
+            <a href="#"><img src="/210405/img/cup.png" alt=""></a>
+            <a href="#"><img src="/210405/img/picture.png" alt=""></a>
+            <a href="#"><img src="/210405/img/tv.png" alt=""></a>
+            <a href="#"><img src="/210405/img/headphone.png" alt=""></a>
+        </nav>
+        <header>
+            <div class="div_header">
+                <img src="/210405/img/header_img.jpg" alt="" class="image">
+                <img src="/210405/img/content_img.jpg" alt="" class="ad_img">
+            </div>
+        </header>
+        <nav class="main_menu">
+            <a href="#">HOME</a>
+            <a href="#">COFFEE</a>
+            <a href="#">CF</a>
+            <a href="#">PRINT</a>
+            <a href="#">문의하기</a>
+        </nav>
+        <section>
+            <article>
+                <h2>제품 문의하기</h2>
+            </article>
+            <br>
+            <br>
+            <article>
+                <form action="" method="GET">
+                    <table>
+                        <tr>
+                            <td class="right td1"><label for="title1">제목</label> </td>
+                            <td><input type="text" name="title" id="title1" required placeholder="제목을 입력해주세요"
+                                    class="td2"></td>
+                        </tr>
+                        <tr>
+                            <td class="right td1"><label for="writer1">작성자</label></td>
+                            <td><input type="text" name="writer" id="writer1" required placeholder="작성하신분 성함을 입력해주세요"
+                                    class="td2"></td>
+                        </tr>
+                        <tr>
+                            <td class="right td1"><label for="email1">답변받을 이메일</label></td>
+                            <td><input type="text" name="email" id="email1" class="email_box td2" required
+                                    placeholder="이메일 주소">@<select name="email" id="email2">
+                                    <option value="mail1">gmail.com</option>
+                                    <option value="mail2">naver.com</option>
+                                    <option value="mail3">hanmail.net</option>
+                                    <option value="self">직접입력</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="right td1"><label for="question1">문의내용</label></td>
+                            <td><textarea name="question" id="question1" cols="28" rows="8" placeholder="문의 내용을 입력해 주세요"
+                                    class="td_textarea">문의 내용을 입력해주세요</textarea></td>
+                        </tr>
+                    </table>
+                    <button type="input">문의하기</button><button type="reset" class="f_right">초기화</button>
+                </form>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="id" name="id">
+        <br>
+        <input type="password" name="pw">
+        <button type="button" onclick="logincheck()">로그인</button>
+        <script>
+            function logincheck(){
+                //겹치는 요소 있으니까 배열로 표현-->getElements함수가 배열로 표현해줌
+                var id = document.getElementsByName("id")[0];
+                //var pw = document.getElementsByName("pw")[0];
+                var pw = document.frm.pw;
+                console.log(id.value + " : " + pw.value);
+                if(id.value.length == 0 || pw.value == "")
+                    alert("아이디 비번 확인");
+            }
+        </script>
+    </form>
+</body>
+
+</html>
